@@ -8,20 +8,13 @@
 <body>
   <?php
     include('connect.php');
-    // $days= $_POST['semi'];
-    // $Program = $_POST['NameOfProgram'];
-    // $courseName = $_POST['coursename'];
-    // $enrollno=$_POST['enrollno'];
+  
     $days=array();
     $s=array();
     $e=array();
     $projectid= $_POST['1'];
     $result = mysqli_query($conn,"SELECT * From project where Project_id='$projectid';");
-    // $rows = mysqli_fetch_assoc($result);
-    // $i=1;
-    // $str='T'.$i.'s';
-    // echo $str;
-    // echo $rows[T.$i.s];
+  
     $i=1;
      $row=mysqli_fetch_assoc($result);
     while($i<=16){
@@ -30,11 +23,7 @@
      $e[]=$row[T.$i.e];
      $i++;  
 }
-// for($a=0;$a<16;$a++){
-// echo $days[$a];
-// echo $s[$a];
-// echo $e[$a];
-// }
+
   ?>
 
 
