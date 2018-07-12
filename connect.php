@@ -10,7 +10,7 @@ $conn = mysqli_connect("localhost", "root", "anonymous001","projectmis");
 	 }
 	 else
 	 {
-			echo "success";
+			//echo "success";
 	 }
 	 
 	 

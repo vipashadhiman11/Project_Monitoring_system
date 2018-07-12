@@ -15,7 +15,7 @@
     // $Program = $_POST['NameOfProgram'];
     // $courseName = $_POST['coursename'];
     // $enrollno=$_POST['enrollno'];
-    $task = array("Obtaining approval of competent authority for inviting EOI for formulation of draft tender terms & conditions and technical specifications",
+     $task = array("Obtaining approval of competent authority for inviting EOI for formulation of draft tender terms & conditions and technical specifications",
 
 "Inviting expression of interest for formulation of draft by publishing in CPP Portal and websites etc","Formulation of draft tender terms and conditions and technical specifications by technical committee",
 "Obtaining approval of competent authority for inviting e-tender for purchase","Vetting of tender terms & condtions from FP to CP,Delhi","Inviting e-tender withn a provision of pre-bid meeting","Pre-bid meeting & Opening of e-tender from the date of 
@@ -54,7 +54,7 @@ of Security Money","Completion of Project/Supply of equipment by the firm","Tech
 <?php
 
     
-    $array_count =array(1,1,1,2,2,1,2,2,1,1,1,1,1,2,1,1);
+    $array_count =array(1,5,7,2,2,1,2,2,15,1,11,4,5,2,1,3);
    
 
 
@@ -73,7 +73,7 @@ of Security Money","Completion of Project/Supply of equipment by the firm","Tech
 ?>
 
 
-<a href="edit.html" style="align:right;">EDIT</a>
+<button onclick="project.html" style="align:right;">EDIT</button>
 
 <script type="text/javascript">
 
