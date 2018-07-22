@@ -1,26 +1,11 @@
-<!-- <html>
-<head>
-<title>signup</title>
-</head>
-<body>
-<form action = "/cgi-bin/signup.py" method = "post">
-Inspector Name: <input type = "text" name = "inspector_name" value="Inspector name"    ><br />
-Inspector ID: <input type = "text" name = "inspector_id" value="Inspector ID"    ><br />
-Password: <input type = "text" name = "password" value="Password"    ><br />
-<input type = "submit" value = "Signup" />
-</form>
-
-<form action = "http://localhost/zomat/login.html" method = "post">
-
-<input type = "submit" value = "Login" />
-</form>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html>
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Cagliostro" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Cagliostro" rel="stylesheet"> 
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
 <style>
 
 
@@ -115,7 +100,7 @@ input[type=submit]:hover {
 .container {
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 20px;
+    padding: 15px;
     height: 400px;
 /*    opacity: 0.95;
 */    font-family: 'Cagliostro', sans-serif;
@@ -151,6 +136,18 @@ input[type=submit]:hover {
 </head>
 <body >
 
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img style="height:40px;margin:5px;" class="align-self-center mr-3" src="https://seeklogo.com/images/D/delhi-police-logo-C454A2A54E-seeklogo.com.png"/>
+    </div>
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">EDIT</a>
+    </div>
+    <a href="project.php" class="btn btn-danger navbar-btn" style="float:right;">PROJECT LIST</a>
+  </div>
+</nav>
+
 <div class="container" style="margin-top:10%; width:70%; margin-left:14%">
 	<p class="line-1 anim-typewriter">Edit Project Here!</p>
   <form action="/cgi-bin/zomat_signup.py" method = "post">
@@ -179,7 +176,7 @@ input[type=submit]:hover {
     
     <div class="row">
       <input type="submit" class="signup" value="SUBMIT">
-      <a href="http://localhost/zomato_login/zomat_login.html"><button class="login" type="button" >LOGIN</button>
+     
 <!--       <input type="submit" class="login" action = "http://localhost/zomat/login.html" value="LOGIN">
  -->    </div>
   </form>

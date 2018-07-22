@@ -73,7 +73,7 @@ of Security Money","Completion of Project/Supply of equipment by the firm","Tech
 ?>
 
 
-<button onclick="project.html" style="align:right;">EDIT</button>
+<a href="edit.html" style="align:right;">EDIT</a>
 
 <script type="text/javascript">
 
