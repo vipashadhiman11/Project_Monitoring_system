@@ -12,6 +12,15 @@
 <body>
   <?php
     include('connect.php');
+
+    function dateDiff($date1, $date2) 
+      {
+        $date1_ts = strtotime($date1);
+        $date2_ts = strtotime($date2);
+        $diff = $date2_ts - $date1_ts;
+        return round($diff / 86400);
+      }
+
     $projectid= $_POST['id'];
     // echo $projectid;
     // $Program = $_POST['NameOfProgram'];
@@ -51,16 +60,24 @@ of Security Money","Completion of Project/Supply of equipment by the firm","Tech
      //echo $e[$i-1];
      $i++;  
 }
-// for($a=0;$a<16;$a++){
-// // echo $days[$a];
-// // echo $s[$a];
-// // echo $e[$a];
-// $array_count[]=date_diff($s[$a],$e[$a],absolute);
+for($a=0;$a<16;$a++){
+// echo $days[$a];
+// echo $s[$a];
+// echo $e[$a];
+//   $datediff = $s[$a]-$e[$a];
+
+ //difference between two dates
+$dateDiff= dateDiff($s[$a], $e[$a]);
+$array_count[$a]=abs($dateDiff);
+
+ // $array_count[$a]= abs($s[$a]-$e[$a]);
+  
+// $array_count[$a]=date_diff($s[$a],$e[$a],absolute);
 // echo $array_count[$a];
-// }
+}
     
     
-  $array_count =array(1,5,7,2,2,1,2,2,15,1,11,4,5,2,1,3);
+  //$array_count =array(1,5,7,2,2,1,2,2,15,1,11,4,5,2,1,3);
 
 
 
