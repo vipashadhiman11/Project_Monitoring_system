@@ -11,10 +11,7 @@
 <body>
   <?php
     include('connect.php');
-    // $days= $_POST['semi'];
-    // $Program = $_POST['NameOfProgram'];
-    // $courseName = $_POST['coursename'];
-    // $enrollno=$_POST['enrollno'];
+    
      $task = array("Obtaining approval of competent authority for inviting EOI for formulation of draft tender terms & conditions and technical specifications",
 
 "Inviting expression of interest for formulation of draft by publishing in CPP Portal and websites etc","Formulation of draft tender terms and conditions and technical specifications by technical committee",
